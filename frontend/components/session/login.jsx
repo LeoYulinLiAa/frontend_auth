@@ -16,6 +16,7 @@ const Login = props => {
   }
 
   return <div className="session-form">
+    <h2>Login</h2>
     <form onSubmit={handleSubmit}>
       <label>Username:
         <input type="text" value={ username } onChange={ event => setUsername(event.target.value) }/>

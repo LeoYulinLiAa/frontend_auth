@@ -1,4 +1,4 @@
-import { postSession, deleteSession, postUser } from "../utils/chirps";
+import { deleteSession, postSession, postUser } from "../utils/session";
 
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';

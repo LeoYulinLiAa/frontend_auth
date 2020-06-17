@@ -5,12 +5,13 @@ import ChirpIndexContainer from './chirps/chirp_index_container';
 import Home from './home/home';
 import { Route } from 'react-router-dom';
 import SignUp from "./session/signup";
+import { AuthRoute, ProtectedRoute } from "../utils/route_util";
 
 export default () => (
   <div>
     <Route path="/" component={NavBarContainer} />
     <Route exact path="/" component={Home} />
-    <Route path="/chirps" component={ChirpIndexContainer} />
-    <Route path="/signup" component={SignUp} />
+    <ProtectedRoute path="/chirps" component={ChirpIndexContainer} />
+    <AuthRoute path="/signup" component={SignUp} />
   </div>
 );

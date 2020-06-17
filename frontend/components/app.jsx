@@ -6,6 +6,7 @@ import Home from './home/home';
 import { Route } from 'react-router-dom';
 import SignUp from "./session/signup";
 import { AuthRoute, ProtectedRoute } from "../utils/route_util";
+import Login from "./session/login";
 
 export default () => (
   <div>
@@ -13,5 +14,6 @@ export default () => (
     <Route exact path="/" component={Home} />
     <ProtectedRoute path="/chirps" component={ChirpIndexContainer} />
     <AuthRoute path="/signup" component={SignUp} />
+    <AuthRoute path="/login" component={Login} />
   </div>
 );

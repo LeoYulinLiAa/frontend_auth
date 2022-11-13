@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "redux-devtools-extension": "^2.13.8",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "start": "webpack -w --mode=development"
